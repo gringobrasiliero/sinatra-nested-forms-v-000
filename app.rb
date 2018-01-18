@@ -11,7 +11,7 @@ get '/new' do
   erb :"pirates/new"
 end
     # code other routes/actions here
-post '/pirates' do
+post '/pirates/show' do
 @pirate = Pirate.new(params[:pirate])
 
 params[:pirate][:ships].each do |details|
