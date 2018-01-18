@@ -17,7 +17,7 @@ post '/pirates' do
 params[:pirate][:ships].each do |details|
   Pirate.new(details)
 end
-
+@ships = Ship.all
 erb :"pirates/show"
 end
 end
